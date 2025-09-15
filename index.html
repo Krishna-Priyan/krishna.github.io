@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnapriyan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#cv" class="nav-link">CV</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="mode-toggle" aria-label="Toggle dark and light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="content-wrapper about-wrapper">
+            <div class="about-text-content">
+                <h1>About Me</h1>
+                <div class="about-content">
+                    <img src="krishna.jpeg" alt="Krishnapriyan's Profile Picture" class="profile-pic">
+                    <div class="text-and-buttons">
+                        <p>
+                            Hello! I am a passionate programmer with a strong foundation in Python. I have hands-on experience in GUI development and an understanding of game development basics with Pygame. I am currently expanding my skills by learning C programming. I am highly motivated to apply my skills in real-world scenarios. I am eager to contribute to innovative projects and grow professionally through challenging opportunities.
+                        </p>
+                        <div class="button-group">
+                            <a href="#contact" class="main-btn hire-me-btn">Hire Me</a>
+                            <a href="#projects" class="main-btn see-works-btn">See My Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="content-wrapper">
+            <h2>Project Section</h2>
+            <div class="project-grid">
+                <div class="project-card" id="project1-modal-trigger">
+                    <h3>Tata Showroom (GUI)</h3>
+                    <p>A desktop application for a car showroom developed using Python's Tkinter library.</p>
+                </div>
+                <div class="project-card" id="project2-modal-trigger">
+                    <h3>Shooting Game (Pygame)</h3>
+                    <p>A beginner's experience project to learn game development concepts using Pygame.</p>
+                </div>
+                <div class="project-card" id="project3-modal-trigger">
+                    <h3>This Website (Web Development)</h3>
+                    <p>My personal portfolio website, a showcase of web development skills and design.</p>
+                </div>
+                <div class="project-review">
+                    <p>"A flawless GUI with a great color palette and clean design." - Review for Tata Showroom</p>
+                    <p>"This shooting game has great player and bullet animation with good controls." - Review for Shooting Game</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cv" class="section">
+        <div class="content-wrapper">
+            <h2>CV Section</h2>
+            <div class="cv-content">
+                <img src="resume.png" alt="Image of Resume" class="resume-image">
+                <a href="resume.pdf" class="main-btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="content-wrapper">
+            <h2>Blog Section</h2>
+            <div class="blog-grid">
+                <div class="blog-card" id="blog1-modal-trigger">
+                    <h3>Beginner experience on Game development</h3>
+                    <p>A short read on my first steps into the world of game development with Pygame.</p>
+                </div>
+                <div class="blog-card" id="blog2-modal-trigger">
+                    <h3>Car enthusiasm and Creation of Tata digi-showroom</h3>
+                    <p>My journey of blending car passion with programming to create a digital car showroom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content-wrapper">
+            <h2>Contact Section</h2>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <p><i class="fas fa-phone"></i> Phone: <span class="contact-info">+91 9884538517</span></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:krishnapriyan2007@gmail.com" class="contact-link">krishnapriyan2007@gmail.com</a></p>
+                    <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/__atomicx__/" target="_blank" class="contact-link">__atomicx__</a></p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/919884538517" target="_blank" class="contact-link">Chat with me</a></p>
+                </div>
+                <div class="contact-right">
+                    <form action="display_data.php" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" value="Your Name" required>
+                        <input type="email" name="email" value="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="YouR Message" required></textarea>
+                        <label for="file_upload" class="file-label">Attach File (PDF or Document only)</label>
+                        <input type="file" id="file_upload" name="file" accept=".pdf, .doc, .docx">
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Tata Showroom (GUI)</h3>
+            <p>This is a desktop application developed using Python's Tkinter library. It simulates a car showroom environment, allowing users to select cars based on their budget. The project demonstrates my skills in creating interactive GUIs and handling user input.</p>
+        </div>
+    </div>
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Shooting Game (Pygame)</h3>
+            <p>A simple shooting game developed using Python's Pygame library. This project was a foundational learning experience in game development, focusing on concepts like handling user input, sprite animation, and basic collision detection.</p>
+        </div>
+    </div>
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>This Website (Web Development)</h3>
+            <p>This portfolio website itself is a project created using HTML, CSS, and JavaScript. It showcases my ability to design and build a responsive, multi-page website with dynamic features like a dark/light mode toggle and interactive pop-ups.</p>
+        </div>
+    </div>
+
+    <div id="blog1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Beginner experience on Game development</h3>
+            <p>I started my journey into game development with Pygame, a powerful library for Python. My first project was a simple shooting game that taught me the fundamental concepts of game loops, event handling, and managing sprites. It was a challenging but rewarding experience that solidified my interest in game development.</p>
+        </div>
+    </div>
+    <div id="blog2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Car enthusiasm and Creation of Tata digi-showroom</h3>
+            <p>As a car enthusiast, I wanted to combine my passion with my programming skills. This led me to create a digital car showroom for Tata using Python and Tkinter. The application allows a user to input their budget and view suitable car models, providing a practical application of GUI development and data handling. It was a creative project that merged two of my key interests.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
